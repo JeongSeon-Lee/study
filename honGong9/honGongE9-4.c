@@ -11,5 +11,7 @@ int main(void) {
     a = 20;                             // a를 직접 참조하여 값을 바꾼다.
     printf("변수 a 값 : %d\n", *pa);    // 포인터로 간접 참조하여 바뀐 값 출력
 
+    *pa = 20;
+    printf("변수 a 값 : %d\n", *pa);
     return 0;
 }
