@@ -19,6 +19,7 @@ int main(void) {
     scanf("%d %d", &a, &b);
     printf("%d, %d\n", a, b);
 
+    /* scanf 함수는 %c 앞에 화이트 스페이스를 사용하면 문자도 분리하여 입력할 수 있는 특별한 기능 */
     printf("문자 두 개 입력 : \n");
     scanf(" %c %c", &ch1, &ch2);
     printf("[%c%c]\n", ch1, ch2);
