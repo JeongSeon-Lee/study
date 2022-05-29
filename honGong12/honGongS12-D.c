@@ -4,6 +4,9 @@
 int main(void) {
     char str1[80], str2[80], str3[80];
     char high[80], middle[80], low[80], temp[80];
+
+    printf("세 단어 입력 : ");
+    scanf("%s %s %s", str1, str2, str3);
     
     // st1이 str2보다 사전의 뒤에 나오면 두 문자열을 바꾼다
      if(strcmp(str1, str2) > 0) 
@@ -28,10 +31,8 @@ int main(void) {
         strcpy(str2, str3);
         strcpy(str3, temp);
     }
-/* 
-    printf("세 단어 입력 : ");
-    scanf("%s %s %s", str1, str2, str3);
-    
+
+/*
     if (strcmp(str1, str2) > 0) {       // str1(high) vs str2(low)
         strcpy(high, str1);
         strcpy(low, str2);
@@ -53,7 +54,8 @@ int main(void) {
         strcpy(low, str3);
     }
  */
-    printf("%s, %s, %s", low, middle, high);
+    printf("%s, %s, %s", str1, str2, str3);
+    // printf("%s, %s, %s", low, middle, high);
 
     return 0;
     
