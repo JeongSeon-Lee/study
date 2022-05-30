@@ -13,7 +13,6 @@ int main(void) {
         for (j = 0; j < 5; j++) {
             sum += ary[i][j];
         }
-        j++;
         ary[i][j] = sum;
     }
     
@@ -22,7 +21,6 @@ int main(void) {
         for (j = 0; j < 4; j++) {
             sum += ary[j][i];
         }
-        j++;
         ary[j][i] = sum;
     }
 
