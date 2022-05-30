@@ -14,6 +14,7 @@ int main(void) {
             sum += ary[i][j];
         }
         ary[i][j] = sum;
+        sum = 0;
     }
     
     sum = 0;
@@ -22,6 +23,7 @@ int main(void) {
             sum += ary[j][i];
         }
         ary[j][i] = sum;
+        sum = 0;
     }
 
     for (i = 0; i < 5; i++) {
