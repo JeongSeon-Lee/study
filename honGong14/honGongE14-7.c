@@ -8,6 +8,18 @@ int main(void) {
     int i, j;
 
     for (i = 0; i < 3; i++) {
+        printf("%5d", *(pary[i]));
+        printf("\n");
+    }
+    printf("\n");
+
+    for (i = 0; i < 3; i++) {
+        printf("%5d", pary[i]);
+        printf("\n");
+    }
+    printf("\n");
+
+    for (i = 0; i < 3; i++) {
         for (j = 0; j < 4; j++) {
             printf("%5d", pary[i][j]);
         }
