@@ -7,7 +7,8 @@ int main(void) {
     int res;                    // 반환값을 저장할 변수
 
     fp = sum;                   // 함수명을 함수 포인터에 저장
-    res = fp(10, 20);           // 함수 포인터로 함수 호출
+    // res = fp(10, 20);           // 함수 포인터로 함수 호출
+    res = (*sum)(10, 20);
     printf("result : %d\n", res);  //반환값 출력
 
     return 0;
