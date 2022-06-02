@@ -24,13 +24,13 @@ void swap(char *type, void *a, void *b) {
     void *temp;
 
     if (type == "int") {
-        (int *)temp = (int *)a;
-        (int *)a = (int *)b;
-        (int *)b = (int *)temp;
+        *(int *)temp = *(int *)a;
+        *(int *)a = *(int *)b;
+        *(int *)b = *(int *)temp;
     }
     else if (type == "double") {
-        (double *)temp = (double *)a;
-        (double *)a = (double *)b;
-        (double *)b = (double *)temp;
+        *(double *)temp = *(double *)a;
+        *(double *)a = *(double *)b;
+        *(double *)b = *(double *)temp;
     }
 }
