@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void swap(char *type, void *a, void *b);
 
@@ -23,12 +24,12 @@ int main(void) {
 void swap(char *type, void *a, void *b) {
     void *temp;
 
-    if (type == "int") {
+    if (strcmp(type, "int") == 0) {
         *(int *)temp = *(int *)a;
         *(int *)a = *(int *)b;
         *(int *)b = *(int *)temp;
     }
-    else if (type == "double") {
+    else if (strcmp(type, "double") == 0) {
         *(double *)temp = *(double *)a;
         *(double *)a = *(double *)b;
         *(double *)b = *(double *)temp;
