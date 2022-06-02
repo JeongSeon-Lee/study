@@ -13,6 +13,7 @@ int main(void) {
         printf("문자열을 입력하세요 : ");
         gets(temp);
         if (strcmp(temp, "end") == 0) break;
+        // if (temp == "end") break;
         str[i] = (char *)malloc(strlen(temp) + 1);
         strcpy(str[i], temp);
         i++;
