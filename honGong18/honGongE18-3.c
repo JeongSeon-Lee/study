@@ -6,7 +6,7 @@ int main(void)
     char str[] = "banana";
     int i;
 
-    fp = fopen("b.txt", "w");
+    fp = fopen("honGong18//b.txt", "w");
     if (fp == NULL)
     {
         printf("파일을 만들지 못했습니다.\n");
