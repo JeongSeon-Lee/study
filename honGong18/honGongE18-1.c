@@ -4,7 +4,7 @@ int main(void)
 {
     FILE *fp;
 
-    fp = fopen("a.txt", "r");
+    fp = fopen("honGong18//a.txt", "r");
     if (fp == NULL)
     {
         printf("파일이 열리지 않았습니다.\n");
