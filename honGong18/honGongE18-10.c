@@ -9,6 +9,7 @@ int main(void)
     fp = fopen("honGong18//a.txt", "r");
 
     fscanf(fp, "%d", &age);
+    fgetc(fp);
     fgets(name, sizeof(name), fp);
 
     printf("나이 : %d, 이름 : %s", age, name);
